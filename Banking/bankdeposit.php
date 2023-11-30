@@ -3,147 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deposit</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <title>Transactions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Roboto|Caprasimo|Abril Fatface">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='styling.css'>
     <style>
-        .mydiv{
-            height:325px; width:600px;
-            border:2px solid grey;
-            background-color: #759fc2;
-            font-weight:900;
-            font-size: 25px;
-            margin:auto;
-            padding:30px;        
-            display:none;
-            border-radius: 30px;
-            box-shadow: 3px 3px 6px 6px grey;
-            background-image: linear-gradient(to right, #03618a, #95B9C8);
-        }
-        .sub{
+         .sub{
             background-image: linear-gradient(to right, green, rgb(121, 236, 121), green);
-            padding:15px;
+            padding:5px 15px;
             border-radius: 25px;
             font-size:large;
             color:white;
             border-color:green;
         }
-        .sub:hover{
-            transform: scale(1.1, 1.1);
-        }
-        form p{
-            font-size: 25px;
-            font-weight: 800;
-            color:blue;
-            text-shadow: 3px 3px 8px lightcoral;
-        }
-        .nav{
-            width:100%;
-            height:80px;
-            border:2px solid black;
-            box-shadow: 3px 3px 15px rgb(179, 140, 140);
-            font-family:Caprasimo;
-            background-color: #004c85;
-            color:white;
-        }
-        .navdown{
-            width:100%;
-            height:170px;
-            border:2px solid #0063B2;
-            background-color: #0063b0;
-            /* background-image: linear-gradient(to right, #024277, navy, blue, #024277, #759fc2, navy); */
-            color:white;
-            font-weight:bolder;
-            font-size:35px;
-            letter-spacing: 2px;
-            display:flex;
-
-        }
-        .navdown p{
-           padding-left:100px;
-           position: relative;
-           bottom:10px;
-        }
-        .footer{
-            background-color: #004c85;
-            color:white;
-            font-weight: bolder;
-            font-size: large;
-            width: 100%;
-            height:30px;
-            padding:10px;
-            display: flex;
-            align-items: center;
-        }
-        .extra{
-            height:160px; width:1000px;
-            border:2px solid navy;
-            background-image: linear-gradient(to right, #024277, navy, blue, #024277, #759fc2, navy);
-            padding:10px;
-            color:white;
-            font-size:25px;
-            font-weight:500px;
-            display: flex;
-            line-height: 0.1px;
-            padding:10px;        
-        }
-        body{
-            background-color: #95B9C7;
-        }
-        .footer{
-            background-color: #004c85;
-            color:white;
-            font-weight: bolder;
-            font-size: large;
-            width: 100%;
-            height:30px;
-            padding:10px;
-            display: flex;
-            align-items: center;
-            position:sticky;
-            bottom:0px;
-        }
-        h1{
-            color:Blue;
-            text-shadow: 4px 4px 6px aqua;
-            animation: shrink 1s infinite linear;
-        }
     </style>
 </head>
 <body>
-
-    <div class="nav">
-        <img src="hdfc.png" height="50px" width="200px" style="position:relative; top:15px; left:120px;">
-        <a href="bankfrontpg.php"><i class="material-icons" style="font-size: 30px; color:white; position:relative; left:1120px;">home</i></a>
-        <a href="bankcust.php"><i class="material-icons" style="font-size: 30px; color:white; position:relative; left:1140px;">account_circle</i></a>
-    </div>
-    <div class="navdown">
-        <img src="hdfc lady2.jpg" height="170px" width="550px">
-        <p style="text-shadow: 5px 3px 3px rgb(201, 36, 36);">We have upgraded.<br>You should too.<br>
-        <span style="font-size:28px; font-weight:200;">Open your Account NOW!</span></p>
-    </div>
-    <br>
-    <center>
-    <div class="extra">
-        <div style="margin:0px 30px 0px 20px;"><p>Manage your</p>
-            <p style="font-size:30px;">Credit & Debit card</p>
-            <p>with <i class="material-icons" style="font-size:36px; color:red; position:relative;">account_balance_wallet</i> MyCard</p>      
-    </div>
-    <div>
-        <i class="material-icons" style="font-size:36px; color:red;">touch_app</i> One touch log-in
-        <br>
-        <p>------------------------</p>
-        <i class="material-icons" style="font-size:36px; color:red;">tune</i> Set card controls and<p>usage limits</p>        
-    </div>
-    <div style="margin:0px 30px 0px 35px;">
-        <i class="material-icons" style="font-size:36px; color:red;">contactless</i> View transactions,<p>statements and reward points</p>
-        <br>
-    </div>
-    <div>
-        <i class="material-icons" style="font-size:80px; position:relative; top:40px; color:white;" >qr_code_2</i>
-    </div>
+<div id='navi'>
+        <div style='background-color:whitesmoke'>
+            <img class='img-fluid' src="hdfclogo.webp" height="130px" width="130px">
+        </div>
+        <h1>HDFC BANK</h1>
+        <div>
+        <a href="bankfrontpg.php"><i class="material-icons" style="font-size: 35px; color:white;">home</i></a>
+        <a href="bankcust.php"><i class="material-icons" style="font-size: 35px; color:white">account_circle</i></a></div>
+</div>
+<div id='navdown' style='background-color: #0063b0;'>        
+        <img class='img-fluid' src="hdfc lady2.jpg" height="70px" width="400px">  
+        <div style="text-shadow: 5px 3px 3px rgb(201, 36, 36); line-height:'1.5'; padding:10px;">      
+        <p>We have upgraded.  You should too.</p>
+        <p style="font-size:20px; font-weight:500;">Open your Account NOW!</p></div>
+</div>
+<center>
+<div id='extranav'>
+       <div>Manage your Debit & Credit card <i class="material-icons" style="font-size:36px; color:red;">account_balance_wallet</i></div>
+       <div><i class="material-icons" style="font-size:36px; color:red;">touch_app</i> One touch log-in
+        <p>--------------</p>
+        <i class="material-icons" style="font-size:36px; color:red;">tune</i> Set card controls and<p>usage limits</p></div>
+       <div><i class="material-icons" style="font-size:36px; color:red;">contactless</i> View transactions,<p>statements and reward points</p></div>
+       <div><i class="material-icons" style="font-size:80px; color:white;" >qr_code_2</i></div>
+</div>
 </center>
-<br>
 
 <?php
 $Accountnum= $_POST['accountnumber'];
@@ -157,7 +58,7 @@ $conn=new mysqli("localhost", "root", "", "test");
 //     echo "connected with database";
 // }
 
-$var1="SELECT * FROM Savings WHERE Accountnumber = '$Accountnum'";
+$var1="SELECT * FROM Savingss WHERE Accountnumber = '$Accountnum'";
 $query=$conn->query($var1);
 
 if($query->num_rows>0){
@@ -166,10 +67,9 @@ while($element = mysqli_fetch_array($query)){
         echo "<center> <button class='sub' id='proceedbutton2' onclick='return nextpage()'>PROCEED</button></center>";
     }
     else{
-        echo "<center><h1>PIN INCORRECT. PLEASE CHECK!</h1></center>";
+        echo "<center><h3>PIN INCORRECT. PLEASE CHECK!</h3></center>";
     }
-}
-}
+}}
 ?>
 <br>
     <center>
@@ -197,12 +97,7 @@ while($element = mysqli_fetch_array($query)){
         </form>
     </div>
 </center>
-<br><br><br>
-<div class="footer">
-    @copyright HDFC Bank Ltd.
-</div>
 <script>   
-
     document.getElementById('withdrawradio').addEventListener('change', checkfunc);
     document.getElementById('depositradio').addEventListener('change', checkfunc2);
     
@@ -218,7 +113,6 @@ while($element = mysqli_fetch_array($query)){
         document.getElementById('disp1').style.display='none'; 
         document.getElementById('disp2').style.display='none';      
     }
-    
     let balancenew=2000;
     function deposit(){
         let depamnt=parseFloat(document.myform.depamnt.value);
@@ -281,12 +175,10 @@ while($element = mysqli_fetch_array($query)){
     function exit(){
         action="bankexitpage.php";
     }
-
     function nextpage(){
         document.getElementById('proceedbutton2').style.display='none';
         document.getElementById('visible').style.display='block';
     }
-
 </script>
 </body>
 </html>
